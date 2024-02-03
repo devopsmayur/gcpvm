@@ -10,6 +10,10 @@ data "tfe_outputs" "test" {
     workspace = "gcpnw"
 }
 
+output "network_info" {
+  value = data.tfe_outputs.google_compute_network.my_network
+}
+
 # Create a virtual machine instance
 resource "google_compute_instance" "my_instance" {
   name         = "my-instance"
