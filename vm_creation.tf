@@ -5,6 +5,11 @@ provider "google" {
   region      = "us-central1"
 }
 
+data "tfe_outputs" "test" {
+    organization =  "devopsmayur"
+    workspace = "gcpnw"
+}
+
 # Create a virtual machine instance
 resource "google_compute_instance" "my_instance" {
   name         = "my-instance"
