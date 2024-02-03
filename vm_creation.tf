@@ -17,3 +17,4 @@ resource "google_compute_instance" "my_instance" {
     }
   }
 
+}
