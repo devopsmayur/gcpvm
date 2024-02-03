@@ -1,8 +1,7 @@
 # vm_creation.tf
 
 provider "google" {
-  credentials = file("<path-to-your-service-account-key.json>")
-  project     = "your-gcp-project-id"
+  project     = "hc-29a5d1b2591a4011824f3071b35"
   region      = "us-central1"
 }
 
