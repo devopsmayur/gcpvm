@@ -17,7 +17,3 @@ resource "google_compute_instance" "my_instance" {
     }
   }
 
-  network_interface {
-    network = var.network_info.self_link
-  }
-}
