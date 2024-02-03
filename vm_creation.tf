@@ -5,11 +5,6 @@ provider "google" {
   region      = "us-central1"
 }
 
-# Input variables to receive network information from Workspace 1
-variable "network_info" {
-  description = "Network information from Workspace 1"
-}
-
 # Create a virtual machine instance
 resource "google_compute_instance" "my_instance" {
   name         = "my-instance"
