@@ -27,7 +27,7 @@ resource "google_compute_instance" "mayur" {
     }
   }
 network_interface {
-    network = google_compute_network.my_network.id
+    network = "default"
 
     access_config {
       // Ephemeral public IP
