@@ -27,7 +27,7 @@ resource "google_compute_instance" "mayur" {
     }
   }
 network_interface {
-    network = projects/hc-2b6b12a0d1a54455ab3af0925b7/global/networks/my-network
+    network = data.tfe_outputs.test.id
 
     access_config {
       // Ephemeral public IP
