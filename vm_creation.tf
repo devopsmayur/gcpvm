@@ -11,7 +11,7 @@ data "tfe_outputs" "test" {
 }
 
 output "network_info" {
-  value = data.tfe_outputs.test.my_network.id
+  value = data.tfe_outputs.test.id
 }
 
 # Create a virtual machine instance
