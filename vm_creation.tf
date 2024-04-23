@@ -5,14 +5,7 @@ provider "google" {
   region      = "us-central1"
 }
 
-data "tfe_outputs" "test" {
-    organization =  "devopsmayur"
-    workspace = "gcpnw"
-}
 
-output "network_info" {
-  value = data.tfe_outputs.test.id
-}
 
 # Create a virtual machine instance
 resource "google_compute_instance" "my_instance" {
@@ -25,5 +18,15 @@ resource "google_compute_instance" "my_instance" {
       image = "debian-cloud/debian-10"
     }
   }
+
+data "tfe_outputs" "test" {
+    organization =  "devopsmayur"
+    workspace = "gcpnw"
+}
+
+output "network_info" {
+  value = data.tfe_outputs.test.id
+}
+
 
 }
