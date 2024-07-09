@@ -23,7 +23,7 @@ resource "google_compute_instance" "mayur" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-10"
+      image = "debian-cloud/debian-11"
     }
   }
 network_interface {
