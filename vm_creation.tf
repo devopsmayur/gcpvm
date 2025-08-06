@@ -1,7 +1,7 @@
 # vm_creation.tf
 
 provider "google" {
-  project     = "hc-1b9472e9d9644acd8ea25b95f8a"
+  project     = "hc-9f9cfc28ffd7455db4a08ac7a0e"
   region      = "us-central1"
 }
 
