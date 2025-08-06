@@ -16,8 +16,8 @@ output "network_info" {
 
 
 # Create a virtual machine instance
-resource "google_compute_instance" "world3" {
-  name         = "my-instance3"
+resource "google_compute_instance" "world7" {
+  name         = "my-instance7"
   machine_type = "n1-standard-1"
   zone         = "us-central1-a"
 
