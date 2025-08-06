@@ -16,7 +16,7 @@ output "network_info" {
 
 
 # Create a virtual machine instance
-resource "google_compute_instance" "mayur" {
+resource "google_compute_instance" "mayur1" {
   name         = "my-instance"
   machine_type = "n1-standard-1"
   zone         = "us-central1-a"
