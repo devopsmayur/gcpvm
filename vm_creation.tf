@@ -11,7 +11,7 @@ data "tfe_outputs" "test" {
 }
 
 output "network_info" {
-  value = data.tfe_outputs.test.id
+  value = data.tfe_outputs.test.idhh
 }
 
 
