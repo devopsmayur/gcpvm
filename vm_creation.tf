@@ -18,7 +18,7 @@ output "network_info" {
 # Create a virtual machine instance
 resource "google_compute_instance" "world11" {
   name         = "my-instance7"
-  machine_type = "t3.mediumyum"
+  machine_type = "e2-medium"  # Cost-effective general purpose
   zone         = "us-central1-a"
 
   boot_disk {
