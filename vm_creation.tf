@@ -23,7 +23,7 @@ resource "google_compute_instance" "world11" {
 
   boot_disk {
     initialize_params {
-      image = "debian-loud/debian-10091"
+      image = "debian-cloud/debian-12"
     }
   }
 network_interface {
