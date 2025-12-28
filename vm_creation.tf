@@ -18,12 +18,12 @@ output "network_info" {
 # Create a virtual machine instance
 resource "google_compute_instance" "world11" {
   name         = "my-instance7"
-  machine_type = "t3.medium"
+  machine_type = "t3.mediumyum"
   zone         = "us-central1-a"
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-11"
+      image = "debian-loud/debian-10091"
     }
   }
 network_interface {
