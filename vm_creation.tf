@@ -19,7 +19,7 @@ output "network_info" {
 resource "google_compute_instance" "world11" {
   name         = "my-instance7"
   machine_type = "e2-medium"
-  zone         = "us-central1-a"
+  zone         = "us-
 
   boot_disk {
     initialize_params {
