@@ -10,8 +10,6 @@ data "tfe_outputs" "test" {
     workspace = "gcpnw"
 }
 
-output "network_info" {
-  value = data.tfe_outputs.test.id
 }
 
 
